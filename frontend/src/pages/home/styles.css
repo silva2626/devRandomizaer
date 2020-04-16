@@ -1,0 +1,124 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.home-container .home-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #fbfffe;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 800px;
+    -webkit-box-shadow: 10px 10px 33px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 33px -12px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 33px -12px rgba(0,0,0,0.75);
+    
+}
+
+.home-container .home-main .home-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   
+}
+
+.home-container .home-main .home-info h1{
+   margin-bottom: 30px;
+   color: #401f3e;
+}
+.home-container .home-main .home-info h3{
+    font-weight: 300;
+ }
+
+.home-container .home-main .home-info p{
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+}
+.home-container .home-main .home-info p strong{
+    color: #401f3e;
+}
+.home-container .home-main .home-inputs{
+    text-align: center;
+    
+}
+.home-container .home-main .home-inputs figure{
+    text-align: center;
+ 
+}
+
+.home-container .home-main .home-inputs figure img{
+    width: 100%;
+    max-width: 250px;
+}
+.home-container .home-main .home-inputs form input{
+    width: 100%;
+    height: 40px;
+    border:none;
+    margin-top: 20px;
+    border-bottom:1px solid lightgray;    
+    padding: 8px;
+    font-size: 18px;
+    background-color: transparent;
+}
+.home-container .home-main .home-inputs form input::placeholder{
+    font-size: 18px;
+
+}
+.home-container .home-main .home-inputs form button{    
+    margin-top: 20px;
+    background-color: #4765bd;
+    border: none;
+    padding: 10px;
+    color: #fbfffe;
+    height: 40px;
+}
+.home-container .home-main .home-inputs form {
+    text-align: right;
+}
+
+.home-container .home-madeBy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.home-container .home-madeBy h4{
+    color: #fbfffe;
+}
+.home-container .home-madeBy a{
+    text-decoration: none;
+    color: #fbfffe;
+    font-weight: 300;
+}
+@media only screen and (max-width: 698px) {
+    .home-container{
+       display: flex;
+       
+       height: auto;
+    }
+    .home-container .home-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .home-container .home-main .home-info{
+        margin-bottom: 20px;
+    }
+    .home-container .home-main .home-info p{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .home-container .home-main .home-inputs form button{
+        width: 100%;
+        
+    }
+  }
